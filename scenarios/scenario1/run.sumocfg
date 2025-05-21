@@ -1,0 +1,34 @@
+<configuration>
+    <input>
+        <net-file value="network.net.xml"/>
+        <route-files value="route.rou.xml"/>
+    </input>
+
+    <time>
+        <begin value="0"/>
+        <end value="50"/>
+    </time>
+
+    <output>
+        <!-- 各車両の移動ログ（時刻ごとの位置） -->
+        <fcd-output value="results/fcd.xml"/>
+        
+        <!-- 各車両の出発〜到着までの統計情報 -->
+        <tripinfo-output value="results/tripinfo.xml"/>
+
+        <!-- ネットワーク全体の状態（各エッジの車両数など） -->
+        <netstate-dump value="results/netstate.xml"/>
+
+        <!-- 概要統計（1ステップあたりの車両数など） -->
+        <summary-output value="results/summary.xml"/>
+
+        <!-- ルート選択のログ（ルートが変更された場合など） -->
+        <vehroutes value="results/vehroutes.xml"/>
+
+        <!-- 車両が使ったエッジのステップごとの滞在時間など -->
+        <emission-output value="results/emissions.xml"/>
+
+        <!-- 各車両の滞在時間ヒートマップの元データ -->
+        <lanechange-output value="results/lanechange.xml"/>
+    </output>
+</configuration>
